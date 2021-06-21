@@ -1,0 +1,183 @@
+.FinalKasa,.stanje,.TATA,.radnik
+{
+    display: flex;
+    flex-direction: column;
+}
+.FinalKasa, .radnik,.stanje
+{
+    flex-direction: row ;
+    flex-wrap:wrap;
+}
+ .DesnaKasa, .desnirandik
+{
+    margin-left: 50px;
+    display:flex;
+    flex-direction: column ;
+}
+.levaKasa , .leviradnik
+{
+
+    flex-direction: column  ;
+}
+.radnik
+{
+flex-direction: column;
+}
+
+.Pecivooo
+{
+    background-color: yellow;
+}
+.stanje
+{
+    flex-direction: column;
+    
+}
+.prodaj, .ObrisatiRacun,.VratiKusur, .IzmeniRadnika,.IzbrisiRadnika,.DodajRadnika
+{
+    flex-basis: 50px;
+    width: 300px;
+    display:flex;
+    background-color: red;
+    
+   
+} 
+.FinalKasa, .radnik
+{
+    border:4px solid black;
+    background-color: yellowgreen;
+    flex-direction: row;
+}
+.inputZaPecivo,.inputZaKolicinu,.transakcija
+{
+    background-color: teal;
+
+}
+.InputzaImeRadnika,.InputzaPrezimeRadnika,.InputzaJMBGRadnika,.PozicijaRadnik,.NovaPozicijaRadnik
+{
+    background-color: rgb(155, 136, 192);
+}
+
+.radnik{
+    background-color: rgb(176, 189, 202);
+}
+.spremanje
+{
+    background-color: rgb(208, 243, 54);
+}
+.kasa{
+    background-color: rgb(113, 144, 211);
+}
+.stovariste{
+    background-color: rgb(170, 139, 192);
+}
+.red 
+{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: lightskyblue;
+}
+.polje,.divvv
+{
+    border: 1px solid black; 
+    width: 100px;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 50px;
+ 
+
+}
+.polje
+{
+       background-color: orange;
+}
+
+.pecnica
+{
+    background-color: rgb(190, 93, 13);
+}
+.fejk{
+    background-color: thistle;
+
+}
+.Pecivoustanju
+{
+    flex-direction:column;
+}
+.l ,tr, tbody
+{
+    border: 100px solid black;
+}
+.radnik
+{
+border:1px solid black;
+
+}
+
+.gornjaRadnja
+{
+    border:2px solid black;
+  
+    
+}
+.donjaRadnja
+{
+    border:2px solid purple;
+
+}
+
+.fejkkk divv
+{
+    border: 2px solid hotpink;
+}
+
+.kasa
+{
+    border:2px solid green;
+    text-align: center;
+    
+    
+
+}
+.stovariste
+{
+    
+    border:2px solid blue;
+    text-align: center;
+    
+    
+}
+
+.pecnica
+{
+  
+    border:2px solid yellow;
+    text-align: center;
+
+}
+
+.spremanje
+{
+   
+    border:2px solid red;
+    text-align: center;
+}
+
+
+.fejkkkdivv
+{
+display: flex;
+
+}
+
+.Fejkz
+{
+    background-color:teal;
+    text-align: center;
+     margin-left:48% ;
+}
+
+.stanje
+{
+    border: 5px solid pink;
+}
