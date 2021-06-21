@@ -1,0 +1,5 @@
+
+-DropDown tables prilikom selekcije peciva i menjanja pozicije radnika.
+-Responsivnost: buttons se pozicioniraju koliko mogu, kad se resajzuje, idu u column.(wrap)
+-Tabela i urednost peciva.
+-Izmenjana validacija prilikom brisanja/menjanja radnika, nije potrebno unositi ime/prezime vec samo zeljeni Jmbg.
