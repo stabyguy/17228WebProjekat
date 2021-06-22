@@ -23,7 +23,10 @@
 {
 flex-direction: column;
 }
-
+.opcijaa, .sel
+{
+    background-color: yellow;
+}
 .Pecivooo
 {
     background-color: yellow;

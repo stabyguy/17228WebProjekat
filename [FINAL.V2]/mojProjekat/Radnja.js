@@ -286,6 +286,27 @@ drawRadnikUI(host)
                 opcija.value="Stovariste";
                 labela.appendChild(opcija);
 
+                let p = document.createElement("div");
+                p.className="p";
+                levi.appendChild(p);
+
+                labela=document.createElement("label");
+                labela.innerHTML="Izaberite radnika: ";
+                p.appendChild(labela);
+
+                labela=document.createElement("select");
+                labela.className="sel";
+                p.appendChild(labela);
+               this.NizRadnik.forEach(radnik => 
+                {
+                    opcija = document.createElement("option");
+                    opcija.innerHTML=radnik.Rime +' '+ radnik.Rprezime;
+                     opcija.value=radnik.Rjmbg;
+                     labela.appendChild(opcija);
+                     opcija.className="opcijaa";
+
+                });
+                
 
                 const desni = document.createElement("div");
                 desni.className="desnirandik";
@@ -332,12 +353,13 @@ drawRadnikUI(host)
         let xjmbg=document.querySelector(".InputzaJMBGRadnika").value;
         let xpozicija=document.querySelector(".PozicijaRadnik").value;
         let onogdebrisemo;
+        let pokupi = document.querySelector(".sel").value;
         let provera =0;
         
         for(let q=0;q<this.NizRadnik.length;q++)
         {
             
-            if(xjmbg == this.NizRadnik[q].Rjmbg )
+            if(pokupi == this.NizRadnik[q].Rjmbg )
             {
                 onogdebrisemo=q;
                 provera=1;
@@ -349,8 +371,7 @@ drawRadnikUI(host)
         if(provera===1)
         {
          
-            let x= document.querySelector(".NovaPozicijaRadnik").value; 
-            console.log(x);
+            let x= document.querySelector(".NovaPozicijaRadnik").value;     
             fetch("https://localhost:5001/Pekara/IzmeniPoziciju/"+this.NizRadnik[onogdebrisemo].id+"/"+x,{
                 method: "PUT",
                 headers: { 
@@ -423,11 +444,11 @@ drawRadnikUI(host)
         let xpozicija=document.querySelector(".PozicijaRadnik").value;
         let onogdebrisemo;
         let provera =0;
-        
+        let pokupi = document.querySelector(".sel").value;
         for(let q=0;q<this.NizRadnik.length;q++)
         {
             
-            if(xjmbg == this.NizRadnik[q].Rjmbg )
+            if(pokupi == this.NizRadnik[q].Rjmbg )
             {
                 onogdebrisemo=q;
                 provera=1;
@@ -564,10 +585,10 @@ else if(provera===0)
         let xjmbg=document.querySelector(".InputzaJMBGRadnika").value;
         let xpozicija=document.querySelector(".PozicijaRadnik").value;
         let novaPozicija= document.querySelector(".NovaPozicijaRadnik").value;
-       
+        let pokupi = document.querySelector(".sel").value;
 
-        let rad = new Radnik (xime, xprezime, xjmbg, xpozicija);
-        const novi = new Radnik (xime, xprezime, xjmbg, novaPozicija);
+        let rad = new Radnik (xime, xprezime, pokupi, xpozicija);
+        const novi = new Radnik (xime, xprezime, pokupi, novaPozicija);
         this.AddRadnik(novi);
      
         this.DeleteRadnikBez(rad);
