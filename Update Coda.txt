@@ -3,3 +3,4 @@
 -Responsivnost: buttons se pozicioniraju koliko mogu, kad se resajzuje(wrapuju se)
 -Tabela i urednost peciva je sada prikladna i citljivija 
 -Izmenjena validacija prilikom brisanja radnika/menjanje pozicije radnika , nije potrebno unositi ime/prezime vec samo zeljeni Jmbg.
+          -Moguce je i izabrati radnika preko drop down menija, umesto da se unosi njegov jmbg.
